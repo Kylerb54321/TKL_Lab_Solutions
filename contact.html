@@ -1,98 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TKL Lab Solutions</title>
-    <meta name="description" content="TKL Lab Solutions">
-    <meta name="author" content="Kyle Bailey">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="styles/tkl_labs.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TKL Lab Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="images/TKL_Lab_Logo.webp" alt="tkl logo" width="200">
-        <h1>TKL Lab Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="trips.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact">
-        <h2>Contact Us</h2>
-
-        <h3>Send Us a Message</h3>
-
-    <p>Xtreme White Water Rafting</p>
-    <p>Phone: 999-999-9999</p>
-    <p>Email: <a href="mailto:">extrememail.com</a></p>
-        </section>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11542.010637198911!2d18.99556624806429!3d-33.73959362540973!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1743614572197!5m2!1sen!2sza" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <header>
+    <div class="header-container">
+      <img src="images/TKL_Lab_Logo.webp" alt="TKL Lab Solutions Logo" class="logo">
+      <h1>TKL Lab Solutions</h1>
+      <p class="motto">For All Your Lab Requirements</p>
     </div>
-        <section class="employees">
-            <figure>
-                <img src="images/Grant.webp" alt="Grant Holmes">
-                <figcaption>Route Specialist</figcaption>
-            </figure>
-            <figure>
-                <img src="images/James.webp" alt="James Buckley">
-                <figcaption>Client Relations</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Michelle.webp" alt="Michelle Angus">
-                <figcaption>Operations Manager</figcaption>
-            </figure>
-        </section>
-        <section class="contact-form">
-            <form class="message">
-                <h4>Message Us</h4>
-        
-                <fieldset>
-                    <label for="full-name">Enter Your Full Name: 
-                        <input id="full-name" name="full-name" type="text" required />
-                    </label>
-                    <label for="email">Enter Your Email: 
-                        <input id="email" name="email" type="email" required />
-                    </label>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Reason for message (required)</legend>
-                    <label><input type="radio" name="reason" id="general-inquiry" value="general-inquiry" class="inline" checked> General Inquiry</label>
-                    <label><input type="radio" name="reason" id="reservation-question" value="reservation-question" class="inline"> Reservation Question</label>
-                    <label><input type="radio" name="reason" id="website-suggestion" value="website-suggestion" class="inline"> Website Suggestion</label>
-                </fieldset>
-        
-                <fieldset>
-                    <label for="bio">Provide a message:
-                        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="How do I..."></textarea>
-                    </label>
-                </fieldset>
-        
-                <label for="subscription-letter">
-                    <input class="inline" id="subscription-letter" type="checkbox" name="subscription-letter">
-                    Subscribe to monthly newsletter
-                </label>
-        
-                <button type="submit">Send Message</button>
-            </form>
-        </section>        
-    </main>
-    <footer>
-        <p>&copy;2025, Xtreme White Water Rafting, Kyle Bailey</p>
-        <nav class="social-links">
-            <a href="https://facebook.com"><img src="images/facebook_logo.webp" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter_logo.webp" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram_logo.webp" alt="Instagram"></a>
-        </nav>
-    </footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: +1-234-567-890</p>
+      <p>Email: info@tkllabsolutions.com</p>
+      <p>Address: 123 Science Park, Lab City, LC 12345</p>
+      <iframe src="https://maps.google.com" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+  
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; © TKL Lab Solutions, 2025</p>
+  </footer>
 </body>
 </html>
